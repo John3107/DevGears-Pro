@@ -4,11 +4,25 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "start": "vite",
+    "preview": "vite preview",
+    "build:lib": "echo 'Skipping...'",
+    "lint": "yarn lint:style && yarn lint:deps && yarn lint:ts",
+    "lint:style": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "lint:style:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:deps": "depcruise --config .dependency-cruiser.js src --output-type err-long",
+    "lint:ts": "tsc --build tsconfig.build.json",
+    "build": "vite build",
+    "test": "jest"
   },
   "dependencies": {
+    "@types/material-ui": "^0.21.12",
+    "@types/prettier": "^2.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "dependency-cruiser": "^12.7.1",
+    "effector": "^22.5.0",
+    "effector-react": "^22.4.0",
+    "lint": "^0.8.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
