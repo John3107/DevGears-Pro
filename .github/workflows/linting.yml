@@ -1,5 +1,5 @@
 name: Linting application
-on: [push, workflow_dispatch, pull_request]
+on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
