@@ -1,5 +1,5 @@
 /** @type {import('dependency-cruiser').IConfiguration} */
-module.exports = {
+exports = {
   forbidden: [
     // FSD rules
     {
@@ -327,7 +327,7 @@ module.exports = {
       fileName: 'tsconfig.json',
     },
 
-    /* Webpack configuration to use to get resolve options from.
+    /* webpack configuration to use to get resolve options from.
 
        The (optional) fileName attribute specifies which file to take (relative
        to dependency-cruiser's current working directory. When not provided defaults
