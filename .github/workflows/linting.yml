@@ -8,10 +8,12 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - name: Get repository code
-    - run: actions/checkout@v3
+      uses: actions/checkout@v3
     - name: Install dependencies
-    - run: yarn
+      run: yarn
     - name: Lint application
-    - run: yarn lint
+      run: yarn lint
     - name: Build application
-    - run: vite build
+      run: vite build
+    - name: Deploy
+      run: echo Deploying ...
