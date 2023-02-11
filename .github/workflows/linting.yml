@@ -1,9 +1,15 @@
 name: Linting application
-on: push
+on:
+  push:
+    branches: [ feature/3-ci-cd ]
+  pull_request:
+    branches: [ develop ]
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Get repository code
+      - run: actions/checkout@v3
       - name: Install dependencies
       - run: yarn
       - name: Lint application
