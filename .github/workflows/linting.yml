@@ -15,6 +15,6 @@ jobs:
       - name: Lint application
         run: yarn lint
       - name: Build application
-        run: vite build
+        run: yarn build
       - name: Deploy
         run: echo Deploying ...
