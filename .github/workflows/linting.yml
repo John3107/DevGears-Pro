@@ -1,9 +1,10 @@
 name: Linting application
 on:
   push:
-    branches: [ feature/3-ci-cd ]
+    branches: [ feature ]
   pull_request:
-    branches: [ develop ]
+    branches: [ develop, master ]
+    type: [ created, edited ]
 jobs:
   linting:
     runs-on: ubuntu-latest
