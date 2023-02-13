@@ -1,4 +1,4 @@
-name: Linting application
+name: Lintering application
 on:
   push:
     branches: [ feature ]
