@@ -1,4 +1,4 @@
-name: Lintering application
+name: Lint React App
 on:
   push:
     branches: [ feature ]
@@ -6,7 +6,7 @@ on:
     branches: [ develop, master ]
     type: [ created, edited ]
 jobs:
-  linting:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Get repository code
