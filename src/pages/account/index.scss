@@ -1,0 +1,62 @@
+.account {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 66px;
+  box-sizing: border-box;
+  gap: 16px;
+
+  .avatar {
+    display: inherit;
+    justify-content: center;
+    width: 100%;
+    &__item {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .individual {
+    display: inherit;
+    justify-content: space-between;
+    width: 100%;
+    gap: 33.3%;
+    border-bottom: solid 1px var(--light-gray);
+  }
+  .contacts {
+    display: inherit;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: solid 1px var(--light-gray);
+  }
+}
+
+.subdevision {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 24px 0;
+  width: 100%;
+  &__title {
+    display: inherit;
+    align-items: center;
+    gap: 8px;
+    color: var(--dark-gray);
+    &_icon {
+      cursor: pointer;
+    }
+  }
+  &__item {
+    height: 24px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &__textfield {
+    input {
+      height: 16px;
+      padding: 4px 14px;
+    }
+  }
+}

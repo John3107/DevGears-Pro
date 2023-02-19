@@ -11,7 +11,9 @@ export const App: React.FC = () => {
         <Header />
         <Sidebar />
       </div>
-      <Routing />
+      <div className="main">
+        <Routing />
+      </div>
     </div>
   );
 };
