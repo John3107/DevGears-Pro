@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { Account } from '../account';
-import { Profile } from '../profile';
+import { Account } from 'pages/account';
+import { Profile } from 'pages/profile';
 
 export const Routing: React.FC = () => {
   return (

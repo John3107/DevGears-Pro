@@ -1,1 +1,1 @@
-export { Account } from './account-page';
+export * from 'pages/account/ui/account-page';

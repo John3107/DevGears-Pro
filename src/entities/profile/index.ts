@@ -1,1 +1,1 @@
-export * from './model';
+export * from 'entities/profile/model/profile-store';
