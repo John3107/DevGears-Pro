@@ -1,10 +1,10 @@
 import { createStore, createEvent } from 'effector';
 
-type InitialStateType = {
+type ProfilePageStateType = {
   value: string;
 };
 export const valueChanged = createEvent<string>();
 
-export const $profile = createStore<InitialStateType>({
+export const $profile = createStore<ProfilePageStateType>({
   value: '',
 }).on(valueChanged, (state, value) => ({ ...state, value }));

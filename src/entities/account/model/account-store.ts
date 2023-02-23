@@ -1,6 +1,6 @@
 import { createStore, createEvent } from 'effector';
 
-type InitialStateType = {
+type AccountPageStateType = {
   name: string;
   surname: string;
   address: string;
@@ -17,7 +17,7 @@ export const userPhoneChanged = createEvent<string>();
 export const userPasswordChanged = createEvent<string>();
 export const userConfirmPasswordChanged = createEvent<string>();
 
-export const $account = createStore<InitialStateType>({
+export const $account = createStore<AccountPageStateType>({
   name: '',
   surname: '',
   address: '',
