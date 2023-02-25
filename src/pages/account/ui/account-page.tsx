@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import avatarIcon from 'shared/ui/assets/images/avatar.png';
-import { Box, Paper, TextField, InputLabel } from '@mui/material';
-import DriveFileRenameOutlineOutlinedIcon from '@mui/icons-material/DriveFileRenameOutlineOutlined';
-import { makeStyles } from '@mui/styles';
+import {
+  Box,
+  Paper,
+  TextField,
+  InputLabel,
+  DriveFileRenameOutlineOutlined,
+  makeStyles,
+} from 'shared/ui/kit';
 import { useStore } from 'effector-react';
 import {
   userNameChanged,
@@ -112,7 +117,7 @@ export const Account: React.FC = () => {
           <Box className={subdevision}>
             <Box className={subdevisionTitle}>
               <InputLabel htmlFor="last-name">First Name</InputLabel>
-              <DriveFileRenameOutlineOutlinedIcon
+              <DriveFileRenameOutlineOutlined
                 onClick={() => setIsEdit({ ...isEdit, name: !isEdit.name })}
                 fontSize="small"
                 className={editIcon}
@@ -135,7 +140,7 @@ export const Account: React.FC = () => {
           <Box className={subdevision}>
             <Box className={subdevisionTitle}>
               <InputLabel htmlFor="last-name">Last Name</InputLabel>
-              <DriveFileRenameOutlineOutlinedIcon
+              <DriveFileRenameOutlineOutlined
                 onClick={() => setIsEdit({ ...isEdit, surname: !isEdit.surname })}
                 fontSize="small"
                 className={editIcon}
@@ -160,7 +165,7 @@ export const Account: React.FC = () => {
           <Box className={subdevision}>
             <Box className={subdevisionTitle}>
               <InputLabel htmlFor="address">Address</InputLabel>
-              <DriveFileRenameOutlineOutlinedIcon
+              <DriveFileRenameOutlineOutlined
                 onClick={() => setIsEdit({ ...isEdit, address: !isEdit.address })}
                 fontSize="small"
                 className={editIcon}
@@ -183,7 +188,7 @@ export const Account: React.FC = () => {
           <Box className={subdevision}>
             <Box className={subdevisionTitle}>
               <InputLabel htmlFor="email">Email</InputLabel>
-              <DriveFileRenameOutlineOutlinedIcon
+              <DriveFileRenameOutlineOutlined
                 onClick={() => setIsEdit({ ...isEdit, email: !isEdit.email })}
                 fontSize="small"
                 className={editIcon}
@@ -206,7 +211,7 @@ export const Account: React.FC = () => {
           <Box className={subdevision}>
             <Box className={subdevisionTitle}>
               <InputLabel htmlFor="phone">Phone</InputLabel>
-              <DriveFileRenameOutlineOutlinedIcon
+              <DriveFileRenameOutlineOutlined
                 onClick={() => setIsEdit({ ...isEdit, phone: !isEdit.phone })}
                 fontSize="small"
                 className={editIcon}
@@ -231,7 +236,7 @@ export const Account: React.FC = () => {
           <Box className={subdevision}>
             <Box className={subdevisionTitle}>
               <InputLabel htmlFor="password">Password</InputLabel>
-              <DriveFileRenameOutlineOutlinedIcon
+              <DriveFileRenameOutlineOutlined
                 onClick={() => setIsEdit({ ...isEdit, password: !isEdit.password })}
                 fontSize="small"
                 className={editIcon}

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routing } from 'pages/routes';
-import { Box } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+import { Box, makeStyles } from 'shared/ui/kit';
 import { Header } from 'app/header';
 import { Sidebar } from 'app/sidebar';
 

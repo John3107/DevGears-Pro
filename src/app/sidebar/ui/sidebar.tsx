@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router';
-import { Box } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+import { Box, makeStyles } from 'shared/ui/kit';
 
 const useStyles = makeStyles({
   sidebar: {

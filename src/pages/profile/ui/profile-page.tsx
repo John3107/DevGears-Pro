@@ -1,8 +1,7 @@
 import React from 'react';
 // import { useStore } from 'effector-react';
 // import { name, $profile } from '../../entities/profile';
-import { Box, Paper } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+import { Box, Paper, makeStyles } from 'shared/ui/kit';
 import avatarIcon from 'shared/ui/assets/images/avatar.png';
 
 const useStyles = makeStyles({
