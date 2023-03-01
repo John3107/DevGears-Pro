@@ -16,12 +16,20 @@
     "test": "jest"
   },
   "dependencies": {
+    "@auth0/auth0-spa-js": "^2.0.4",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.9",
+    "@mui/styles": "^5.11.9",
     "@types/material-ui": "^0.21.12",
+    "@types/node": "^18.14.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
+    "compose-function": "^3.0.3",
     "dependency-cruiser": "^12.7.1",
-    "effector": "^22.5.0",
-    "effector-react": "^22.4.0",
+    "effector": "^22.5.1",
+    "effector-react": "^22.5.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-effector": "^0.10.3",
     "eslint-plugin-jest": "^27.2.1",
@@ -32,7 +40,8 @@
     "lint": "^0.8.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.58.0"
+    "react-router": "^6.8.1",
+    "react-router-dom": "^6.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
