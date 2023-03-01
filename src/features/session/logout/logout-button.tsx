@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'shared/ui/kit';
 
-export const logoutButton: React.FC = () => {
+export const LogoutButton: React.FC = () => {
   return <Button></Button>;
 };
